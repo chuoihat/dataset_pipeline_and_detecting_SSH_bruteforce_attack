@@ -1,0 +1,77 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Attack Expert Report</title>
+<style>
+body{font-family:system-ui,sans-serif;max-width:1000px;margin:2em auto;padding:0 1em;line-height:1.6}
+h1{border-bottom:2px solid #333}h2{color:#2c5282;margin-top:2em}
+table{border-collapse:collapse;width:100%;margin:1em 0}
+th,td{border:1px solid #ddd;padding:8px 12px;text-align:left}
+th{background:#f0f0f0}.warn{color:#c05621;font-weight:bold}
+.good{color:#276749}.num{text-align:right;font-family:monospace}
+</style></head><body>
+<h1>Step 3A — Attack Expert Analysis Report</h1>
+<h2>Summary</h2><table>
+<tr><td>Total events</td><td class="num">313,412</td></tr>
+<tr><td>Total sessions</td><td class="num">47,569</td></tr>
+<tr><td>Unique IPs</td><td class="num">1,591</td></tr>
+<tr><td>IPs with login events</td><td class="num">544</td></tr>
+<tr><td>IPs scan-only</td><td class="num">1,047</td></tr>
+<tr><td>Estimated feature vectors (IP x hour)</td><td class="num">1,055</td></tr>
+<tr><td>Time range</td><td class="num">16.7 hours (0 days)</td></tr>
+<tr><td>Sessions selected (score=1)</td><td class="num">43,698</td></tr>
+<tr><td>Sessions discarded (score=0)</td><td class="num">3,871</td></tr>
+</table>
+<h2>Cowrie UserDB Bias</h2><table>
+<tr><td>Root login.success sessions</td><td>26,876</td></tr>
+<tr><td>Total login sessions</td><td>44,205</td></tr>
+<tr><td>Root success rate</td><td>60.8%</td></tr>
+<tr><td>Bias detected?</td><td><span class="warn">YES</span></td></tr>
+<tr><td>Sessions relabeled</td><td>25,646</td></tr>
+<tr><td>Sessions kept as success</td><td>793</td></tr>
+<tr><td>Keep rate actual</td><td>3.0%</td></tr>
+</table>
+<h2>EventID Distribution</h2><table><tr><th>EventID</th><th>Count</th></tr>
+<tr><td>cowrie.session.connect</td><td class="num">47,567</td></tr>
+<tr><td>cowrie.session.closed</td><td class="num">47,562</td></tr>
+<tr><td>cowrie.client.version</td><td class="num">44,483</td></tr>
+<tr><td>cowrie.client.kex</td><td class="num">44,283</td></tr>
+<tr><td>cowrie.command.input</td><td class="num">28,878</td></tr>
+<tr><td>cowrie.login.success</td><td class="num">26,876</td></tr>
+<tr><td>cowrie.session.params</td><td class="num">26,727</td></tr>
+<tr><td>cowrie.log.closed</td><td class="num">26,718</td></tr>
+<tr><td>cowrie.login.failed</td><td class="num">18,025</td></tr>
+<tr><td>cowrie.command.failed</td><td class="num">887</td></tr>
+<tr><td>cowrie.command.success</td><td class="num">354</td></tr>
+<tr><td>cowrie.direct-tcpip.request</td><td class="num">314</td></tr>
+<tr><td>cowrie.session.file_upload</td><td class="num">303</td></tr>
+<tr><td>cowrie.session.file_download</td><td class="num">157</td></tr>
+<tr><td>cowrie.direct-tcpip.data</td><td class="num">145</td></tr>
+<tr><td>cowrie.client.fingerprint</td><td class="num">93</td></tr>
+<tr><td>cowrie.client.size</td><td class="num">40</td></tr>
+</table>
+<h2>Client Version Distribution</h2><table><tr><th>Version</th><th>Count</th></tr>
+<tr><td>SSH-2.0-Go</td><td class="num">39,803</td></tr>
+<tr><td>SSH-2.0-libssh_0.9.6</td><td class="num">3,319</td></tr>
+<tr><td>SSH-2.0-libssh2_1.11.0</td><td class="num">757</td></tr>
+<tr><td>SSH-2.0-libssh2_1.4.3</td><td class="num">122</td></tr>
+<tr><td>SSH-2.0-libssh_0.7.4</td><td class="num">48</td></tr>
+<tr><td>SSH-2.0-OpenSSH_8.9p19</td><td class="num">44</td></tr>
+<tr><td>SSH-2.0-OpenSSH-keyscan</td><td class="num">40</td></tr>
+<tr><td>SSH-2.0-OpenSSH_8.4p1 Debian-5+deb11u3</td><td class="num">38</td></tr>
+<tr><td>SSH-2.0-ZGrab ZGrab SSH Survey</td><td class="num">25</td></tr>
+<tr><td>SSH-2.0-JSCH-0.1.54</td><td class="num">17</td></tr>
+<tr><td>GET / HTTP/1.1</td><td class="num">15</td></tr>
+<tr><td>SSH-2.0-OPENSSH_7.9</td><td class="num">13</td></tr>
+<tr><td>SSH-2.0-OpenSSH_6.0p1 Debian-4+deb7u2</td><td class="num">11</td></tr>
+<tr><td>SSH-2.0-phpseclib_1.0 (openssl)</td><td class="num">9</td></tr>
+<tr><td>SSH-2.0-OpenSSH_8.9p1 Ubuntu-3</td><td class="num">7</td></tr>
+</table>
+<h2>Feature Recommendations</h2>
+<p><b>Active features (7):</b> failed_attempts, num_unique_users, username_entropy, success_ratio, avg_time_between_attempts, login_interval_variance, client_version_category</p>
+<p><b>Dropped features:</b> time_of_day_avg, num_failed_days</p>
+<p><b>Shortcut features:</b> num_failed_ports, ip_entropy</p>
+<h3>Warnings</h3><ul>
+<li class="warn">time_of_day_avg DROPPED: attack data spans only 16.7h (&lt;24h). Any timestamp expansion would make this feature noise. Cite: Owezarski (2015) — botnet operates 24/7, time-of-day is not discriminative.</li>
+<li class="warn">num_failed_days DROPPED: attack data spans 0 day(s). This feature is too sensitive to data assembly method. Cite: Hofstede et al. (2014) — IP rotation makes per-IP day count unreliable.</li>
+<li class="warn">client_version_category: 90% of attack uses &quot;SSH-2.0-Go&quot;. Potential shortcut — monitor via SHAP analysis.</li>
+</ul>
+</body></html>

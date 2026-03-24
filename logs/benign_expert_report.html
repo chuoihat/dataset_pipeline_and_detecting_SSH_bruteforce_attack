@@ -1,0 +1,70 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Benign Expert Report</title>
+<style>
+body{font-family:system-ui,sans-serif;max-width:1000px;margin:2em auto;padding:0 1em;line-height:1.6}
+h1{border-bottom:2px solid #333}h2{color:#276749;margin-top:2em}
+table{border-collapse:collapse;width:100%;margin:1em 0}
+th,td{border:1px solid #ddd;padding:8px 12px;text-align:left}
+th{background:#f0f0f0}.num{text-align:right;font-family:monospace}
+.ok{color:#276749}.warn{color:#c05621}
+</style></head><body>
+<h1>Step 3B — Benign Expert Analysis Report</h1>
+<h2>Cross-Verification</h2><table>
+<tr><td>OpenSSH (host,pid) groups</td><td>1,024</td></tr>
+<tr><td>Cowrie session count</td><td>893</td></tr>
+<tr><td>Session count OK?</td><td><span class="ok">YES</span></td></tr>
+<tr><td>Valid structure (connect+close)</td><td>893</td></tr>
+<tr><td>Missing connect</td><td>0</td></tr>
+<tr><td>Missing close</td><td>0</td></tr>
+<tr><td>OpenSSH usernames</td><td>DEBUG, ORACLE, debug, oracle, root, sysadm</td></tr>
+<tr><td>Cowrie usernames</td><td>DEBUG, ORACLE, debug, oracle, sysadm</td></tr>
+<tr><td>Username consistency</td><td><span class="ok">OK</span></td></tr>
+</table>
+<h2>Empirical Distribution</h2><table>
+<tr><th>Metric</th><th>Value</th></tr>
+<tr><td>Total sessions</td><td class="num">893</td></tr>
+<tr><td>Duration median</td><td class="num">3357.5s</td></tr>
+<tr><td>Duration mean</td><td class="num">41279.6s</td></tr>
+<tr><td>Duration log-normal mu</td><td class="num">7.7283</td></tr>
+<tr><td>Duration log-normal sigma</td><td class="num">2.0194</td></tr>
+</table>
+<h3>Fail Count Distribution</h3><table>
+<tr><th>Fails</th><th>Sessions</th><th>%</th></tr>
+<tr><td>0</td><td class="num">877</td><td class="num">98.2%</td></tr>
+<tr><td>1</td><td class="num">3</td><td class="num">0.3%</td></tr>
+<tr><td>2</td><td class="num">5</td><td class="num">0.6%</td></tr>
+<tr><td>3</td><td class="num">2</td><td class="num">0.2%</td></tr>
+<tr><td>4</td><td class="num">4</td><td class="num">0.4%</td></tr>
+<tr><td>5</td><td class="num">1</td><td class="num">0.1%</td></tr>
+<tr><td>6</td><td class="num">1</td><td class="num">0.1%</td></tr>
+</table>
+<h3>Archetype Counts</h3><table>
+<tr><th>Archetype</th><th>Sessions</th><th>%</th></tr>
+<tr><td>clean_login</td><td class="num">877</td><td class="num">98.2%</td></tr>
+<tr><td>typo</td><td class="num">8</td><td class="num">0.9%</td></tr>
+<tr><td>troubleshoot</td><td class="num">1</td><td class="num">0.1%</td></tr>
+<tr><td>give_up</td><td class="num">7</td><td class="num">0.8%</td></tr>
+</table>
+<h3>Username Pool</h3><table>
+<tr><th>Username</th><th>Sessions</th></tr>
+<tr><td>oracle</td><td class="num">777</td></tr>
+<tr><td>sysadm</td><td class="num">84</td></tr>
+<tr><td>debug</td><td class="num">30</td></tr>
+<tr><td>ORACLE</td><td class="num">1</td></tr>
+<tr><td>DEBUG</td><td class="num">1</td></tr>
+</table>
+<h2>Upscale Plan</h2><table>
+<tr><td>Target vectors (1:1)</td><td class="num">1,055</td></tr>
+<tr><td>Real sessions</td><td class="num">893</td></tr>
+<tr><td>Synthetic needed</td><td class="num">162</td></tr>
+<tr><td>Upscale factor</td><td class="num">0.18x</td></tr>
+<tr><td>Multi-session IPs</td><td class="num">8</td></tr>
+</table>
+<h3>Allocation by Archetype</h3><table>
+<tr><th>Archetype</th><th>Synthetic</th></tr>
+<tr><td>clean_login</td><td class="num">160</td></tr>
+<tr><td>typo</td><td class="num">1</td></tr>
+<tr><td>troubleshoot</td><td class="num">0</td></tr>
+<tr><td>give_up</td><td class="num">1</td></tr>
+</table>
+</body></html>

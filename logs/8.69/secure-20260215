@@ -1,0 +1,86 @@
+Feb  9 08:30:27 flexcube2-uat1 sshd[190810]: pam_unix(sshd:session): session closed for user oracle
+Feb  9 08:59:22 flexcube2-uat1 sshd[369727]: Accepted password for oracle from 10.18.20.196 port 64984 ssh2
+Feb  9 08:59:22 flexcube2-uat1 sshd[369727]: pam_unix(sshd:session): session opened for user oracle by (uid=0)
+Feb  9 09:07:50 flexcube2-uat1 sshd[369795]: Accepted password for oracle from 10.18.20.196 port 63722 ssh2
+Feb  9 09:07:50 flexcube2-uat1 sshd[369795]: pam_unix(sshd:session): session opened for user oracle by (uid=0)
+Feb  9 09:07:50 flexcube2-uat1 sshd[369799]: Accepted password for oracle from 10.18.20.196 port 63723 ssh2
+Feb  9 09:07:50 flexcube2-uat1 sshd[369799]: pam_unix(sshd:session): session opened for user oracle by (uid=0)
+Feb  9 09:08:00 flexcube2-uat1 sshd[369795]: pam_unix(sshd:session): session closed for user oracle
+Feb  9 09:08:00 flexcube2-uat1 sshd[369799]: pam_unix(sshd:session): session closed for user oracle
+Feb  9 12:55:26 flexcube2-uat1 sshd[376842]: Accepted password for oracle from 10.18.20.204 port 49732 ssh2
+Feb  9 12:55:26 flexcube2-uat1 sshd[376842]: pam_unix(sshd:session): session opened for user oracle by (uid=0)
+Feb  9 13:45:39 flexcube2-uat1 sshd[377523]: Accepted password for debug from 10.18.25.70 port 59455 ssh2
+Feb  9 13:45:39 flexcube2-uat1 sshd[377523]: pam_unix(sshd:session): session opened for user debug by (uid=0)
+Feb  9 16:25:01 flexcube2-uat1 sshd[381864]: Accepted password for oracle from 10.18.20.197 port 60670 ssh2
+Feb  9 16:25:01 flexcube2-uat1 sshd[381864]: pam_unix(sshd:session): session opened for user oracle by (uid=0)
+Feb  9 23:26:08 flexcube2-uat1 sshd[592090]: pam_unix(sshd:session): session closed for user oracle
+Feb  9 23:26:10 flexcube2-uat1 sshd[386291]: Accepted password for oracle from 10.18.20.197 port 61282 ssh2
+Feb  9 23:26:10 flexcube2-uat1 sshd[386291]: pam_unix(sshd:session): session opened for user oracle by (uid=0)
+Feb 10 00:18:54 flexcube2-uat1 sshd[386527]: Accepted password for oracle from 10.18.20.196 port 65363 ssh2
+Feb 10 00:18:54 flexcube2-uat1 sshd[386527]: pam_unix(sshd:session): session opened for user oracle by (uid=0)
+Feb 10 05:27:09 flexcube2-uat1 sshd[389152]: Accepted password for oracle from 10.18.20.197 port 61653 ssh2
+Feb 10 05:27:09 flexcube2-uat1 sshd[389152]: pam_unix(sshd:session): session opened for user oracle by (uid=0)
+Feb 10 07:19:59 flexcube2-uat1 sshd[389578]: Accepted password for oracle from 10.18.20.196 port 49510 ssh2
+Feb 10 07:19:59 flexcube2-uat1 sshd[389578]: pam_unix(sshd:session): session opened for user oracle by (uid=0)
+Feb 10 13:07:03 flexcube2-uat1 sshd[391800]: Accepted password for oracle from 10.18.20.204 port 50292 ssh2
+Feb 10 13:07:03 flexcube2-uat1 sshd[391800]: pam_unix(sshd:session): session opened for user oracle by (uid=0)
+Feb 10 13:57:15 flexcube2-uat1 sshd[392024]: Accepted password for oracle from 10.18.20.196 port 50160 ssh2
+Feb 10 13:57:15 flexcube2-uat1 sshd[392024]: pam_unix(sshd:session): session opened for user oracle by (uid=0)
+Feb 10 15:33:32 flexcube2-uat1 sshd[392541]: Accepted password for oracle from 10.18.20.196 port 50488 ssh2
+Feb 10 15:33:32 flexcube2-uat1 sshd[392541]: pam_unix(sshd:session): session opened for user oracle by (uid=0)
+Feb 10 15:33:33 flexcube2-uat1 sshd[392545]: Accepted password for oracle from 10.18.20.196 port 50489 ssh2
+Feb 10 15:33:33 flexcube2-uat1 sshd[392545]: pam_unix(sshd:session): session opened for user oracle by (uid=0)
+Feb 10 15:33:42 flexcube2-uat1 sshd[392541]: pam_unix(sshd:session): session closed for user oracle
+Feb 10 15:33:42 flexcube2-uat1 sshd[392545]: pam_unix(sshd:session): session closed for user oracle
+Feb 10 16:10:31 flexcube2-uat1 sshd[392774]: Accepted password for oracle from 10.18.20.204 port 53824 ssh2
+Feb 10 16:10:31 flexcube2-uat1 sshd[392774]: pam_unix(sshd:session): session opened for user oracle by (uid=0)
+Feb 10 16:16:01 flexcube2-uat1 sshd[392822]: Accepted password for oracle from 10.18.20.200 port 63543 ssh2
+Feb 10 16:16:01 flexcube2-uat1 sshd[392822]: pam_unix(sshd:session): session opened for user oracle by (uid=0)
+Feb 10 17:29:06 flexcube2-uat1 sshd[394872]: Accepted password for oracle from 10.18.20.204 port 53852 ssh2
+Feb 10 17:29:06 flexcube2-uat1 sshd[394872]: pam_unix(sshd:session): session opened for user oracle by (uid=0)
+Feb 10 17:29:06 flexcube2-uat1 sshd[394876]: Accepted password for oracle from 10.18.20.204 port 53853 ssh2
+Feb 10 17:29:06 flexcube2-uat1 sshd[394876]: pam_unix(sshd:session): session opened for user oracle by (uid=0)
+Feb 11 14:03:01 flexcube2-uat1 sshd[837077]: Connection closed by 10.18.20.196 port 52075 [preauth]
+Feb 11 14:05:35 flexcube2-uat1 sshd[838049]: Accepted password for oracle from 10.18.20.196 port 52081 ssh2
+Feb 11 14:05:35 flexcube2-uat1 sshd[838049]: pam_unix(sshd:session): session opened for user oracle by (uid=0)
+Feb 11 14:05:35 flexcube2-uat1 sshd[838071]: Accepted password for oracle from 10.18.20.196 port 52082 ssh2
+Feb 11 14:05:35 flexcube2-uat1 sshd[838071]: pam_unix(sshd:session): session opened for user oracle by (uid=0)
+Feb 11 14:39:48 flexcube2-uat1 sshd[838049]: pam_unix(sshd:session): session closed for user oracle
+Feb 11 14:39:48 flexcube2-uat1 sshd[838071]: pam_unix(sshd:session): session closed for user oracle
+Feb 11 14:40:53 flexcube2-uat1 sshd[850666]: Accepted password for sysadm from 10.18.26.170 port 59234 ssh2
+Feb 11 14:40:53 flexcube2-uat1 sshd[850666]: pam_unix(sshd:session): session opened for user sysadm by (uid=0)
+Feb 11 14:40:53 flexcube2-uat1 sshd[850713]: Accepted password for sysadm from 10.18.26.170 port 59237 ssh2
+Feb 11 14:40:53 flexcube2-uat1 sshd[850713]: pam_unix(sshd:session): session opened for user sysadm by (uid=0)
+Feb 11 14:40:58 flexcube2-uat1 sudo[850775]:  sysadm : TTY=pts/26 ; PWD=/root ; USER=root ; COMMAND=/bin/bash
+Feb 11 14:40:58 flexcube2-uat1 sudo[850775]: pam_unix(sudo-i:session): session opened for user root by sysadm(uid=1000)
+Feb 11 14:41:21 flexcube2-uat1 sudo[850775]: pam_unix(sudo-i:session): session closed for user root
+Feb 11 14:41:21 flexcube2-uat1 sshd[850666]: pam_unix(sshd:session): session closed for user sysadm
+Feb 11 14:41:21 flexcube2-uat1 sshd[850713]: pam_unix(sshd:session): session closed for user sysadm
+Feb 11 14:53:57 flexcube2-uat1 sshd[855464]: Accepted password for oracle from 10.18.20.196 port 52141 ssh2
+Feb 11 14:53:57 flexcube2-uat1 sshd[855464]: pam_unix(sshd:session): session opened for user oracle by (uid=0)
+Feb 11 17:23:36 flexcube2-uat1 sshd[910332]: Accepted password for oracle from 10.18.20.197 port 52624 ssh2
+Feb 11 17:23:37 flexcube2-uat1 sshd[910332]: pam_unix(sshd:session): session opened for user oracle by (uid=0)
+Feb 11 21:24:24 flexcube2-uat1 sshd[996317]: Accepted password for oracle from 10.18.20.197 port 59161 ssh2
+Feb 11 21:24:24 flexcube2-uat1 sshd[996317]: pam_unix(sshd:session): session opened for user oracle by (uid=0)
+Feb 12 00:25:05 flexcube2-uat1 sshd[1060748]: Accepted password for oracle from 10.18.20.197 port 64053 ssh2
+Feb 12 00:25:05 flexcube2-uat1 sshd[1060748]: pam_unix(sshd:session): session opened for user oracle by (uid=0)
+Feb 12 04:25:52 flexcube2-uat1 sshd[1146610]: Accepted password for oracle from 10.18.20.197 port 54208 ssh2
+Feb 12 04:25:52 flexcube2-uat1 sshd[1146610]: pam_unix(sshd:session): session opened for user oracle by (uid=0)
+Feb 12 07:26:33 flexcube2-uat1 sshd[1211048]: Accepted password for oracle from 10.18.20.197 port 59098 ssh2
+Feb 12 07:26:33 flexcube2-uat1 sshd[1211048]: pam_unix(sshd:session): session opened for user oracle by (uid=0)
+Feb 12 09:27:08 flexcube2-uat1 sshd[1254071]: Accepted password for oracle from 10.18.20.197 port 62364 ssh2
+Feb 12 09:27:08 flexcube2-uat1 sshd[1254071]: pam_unix(sshd:session): session opened for user oracle by (uid=0)
+Feb 12 10:39:58 flexcube2-uat1 sshd[1254071]: pam_unix(sshd:session): session closed for user oracle
+Feb 12 11:44:25 flexcube2-uat1 sshd[394872]: pam_unix(sshd:session): session closed for user oracle
+Feb 12 13:40:48 flexcube2-uat1 sshd[1303612]: Accepted password for oracle from 10.18.20.197 port 49889 ssh2
+Feb 12 13:40:48 flexcube2-uat1 sshd[1303612]: pam_unix(sshd:session): session opened for user oracle by (uid=0)
+Feb 12 16:31:32 flexcube2-uat1 sshd[1303612]: pam_unix(sshd:session): session closed for user oracle
+Feb 13 10:42:36 flexcube2-uat1 sshd[1308312]: Accepted password for sysadm from 10.18.26.170 port 63568 ssh2
+Feb 13 10:42:36 flexcube2-uat1 sshd[1308312]: pam_unix(sshd:session): session opened for user sysadm by (uid=0)
+Feb 13 10:42:36 flexcube2-uat1 sshd[1308316]: Accepted password for sysadm from 10.18.26.170 port 63573 ssh2
+Feb 13 10:42:36 flexcube2-uat1 sshd[1308316]: pam_unix(sshd:session): session opened for user sysadm by (uid=0)
+Feb 13 10:42:40 flexcube2-uat1 sudo[1308367]:  sysadm : TTY=pts/25 ; PWD=/root ; USER=root ; COMMAND=/bin/bash
+Feb 13 10:42:40 flexcube2-uat1 sudo[1308367]: pam_unix(sudo-i:session): session opened for user root by sysadm(uid=1000)
+Feb 13 10:43:10 flexcube2-uat1 sshd[1308312]: pam_unix(sshd:session): session closed for user sysadm
+Feb 13 10:43:10 flexcube2-uat1 sudo[1308367]: pam_unix(sudo-i:session): session closed for user root
+Feb 13 10:43:10 flexcube2-uat1 sshd[1308316]: pam_unix(sshd:session): session closed for user sysadm

@@ -1,0 +1,39 @@
+<!doctype html><html><head><meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RHEL SSHD Analyzer - 8.68</title>
+<style>
+body{font-family:Segoe UI,Arial,sans-serif;margin:20px;color:#111}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin:14px 0 20px}
+.card{border:1px solid #ddd;border-radius:8px;padding:10px}
+.k{font-size:11px;color:#666;text-transform:uppercase}
+.v{font-size:18px;font-weight:600}
+details{border:1px solid #ddd;border-radius:8px;padding:8px 10px;margin:10px 0}
+summary{font-weight:600;cursor:pointer}
+table.dataframe{width:100%;border-collapse:collapse;margin-top:8px}
+table.dataframe th,table.dataframe td{border:1px solid #ddd;padding:6px 8px;font-size:12px}
+table.dataframe thead th{background:#f7f7f7}
+</style></head><body>
+<h1>RHEL SSHD Secure Log Analyzer - 8.68</h1>
+<div class="grid">
+<div class="card"><div class="k">Total Parsed Events</div><div class="v">1627</div></div>
+<div class="card"><div class="k">Distinct Source IP</div><div class="v">12</div></div>
+<div class="card"><div class="k">Distinct Usernames</div><div class="v">5</div></div>
+<div class="card"><div class="k">Auth Failures</div><div class="v">35</div></div>
+<div class="card"><div class="k">Auth Success</div><div class="v">599</div></div>
+</div>
+<details open><summary>Event Type Counts</summary>
+<table class="dataframe"><thead><tr><th>event_type</th><th>count</th></tr></thead><tbody><tr><td>session_opened</td><td>632</td></tr><tr><td>accepted_password</td><td>599</td></tr><tr><td>session_closed</td><td>192</td></tr><tr><td>other</td><td>166</td></tr><tr><td>failed_password</td><td>25</td></tr><tr><td>auth_failure</td><td>9</td></tr><tr><td>disconnect_received</td><td>2</td></tr><tr><td>invalid_user</td><td>1</td></tr><tr><td>disconnected_auth_user</td><td>1</td></tr></tbody></table>
+</details>
+<details><summary>Top Failed Source IP</summary>
+<table class="dataframe"><thead><tr><th>src_ip</th><th>failed_count</th></tr></thead><tbody><tr><td>10.18.20.204</td><td>16</td></tr><tr><td>10.18.20.196</td><td>5</td></tr><tr><td>10.18.25.42</td><td>4</td></tr><tr><td>10.18.26.170</td><td>1</td></tr></tbody></table>
+</details>
+<details><summary>Top Successful Source IP</summary>
+<table class="dataframe"><thead><tr><th>src_ip</th><th>success_count</th></tr></thead><tbody><tr><td>10.18.20.204</td><td>184</td></tr><tr><td>10.18.20.197</td><td>130</td></tr><tr><td>10.18.20.196</td><td>124</td></tr><tr><td>10.18.26.170</td><td>60</td></tr><tr><td>10.18.20.200</td><td>32</td></tr><tr><td>10.18.20.198</td><td>32</td></tr><tr><td>10.18.20.203</td><td>11</td></tr><tr><td>10.18.25.19</td><td>9</td></tr><tr><td>10.18.25.70</td><td>6</td></tr><tr><td>10.18.25.26</td><td>4</td></tr><tr><td>10.18.25.52</td><td>4</td></tr><tr><td>10.18.25.42</td><td>3</td></tr></tbody></table>
+</details>
+<details open><summary>Brute Force Candidates</summary>
+<table class="dataframe"><thead><tr><th>src_ip</th><th>failed</th><th>success</th><th>success_ratio</th><th>unique_failed_usernames</th></tr></thead><tbody><tr><td>10.18.20.204</td><td>16</td><td>184</td><td>0.92</td><td>2</td></tr></tbody></table>
+</details>
+<details><summary>Success After Recent Failure (<= 30m)</summary>
+<table class="dataframe"><thead><tr><th>timestamp</th><th>src_ip</th><th>username</th><th>delta_seconds</th></tr></thead><tbody><tr><td>2026-01-29 10:33:07</td><td>10.18.20.204</td><td>oracle</td><td>13</td></tr><tr><td>2026-01-29 10:33:07</td><td>10.18.20.204</td><td>oracle</td><td>13</td></tr><tr><td>2026-01-29 11:51:21</td><td>10.18.25.42</td><td>debug</td><td>179</td></tr><tr><td>2026-01-31 14:33:42</td><td>10.18.20.204</td><td>oracle</td><td>17</td></tr><tr><td>2026-01-31 14:33:43</td><td>10.18.20.204</td><td>oracle</td><td>18</td></tr><tr><td>2026-01-31 15:00:45</td><td>10.18.20.204</td><td>oracle</td><td>1640</td></tr><tr><td>2026-02-02 09:50:37</td><td>10.18.20.196</td><td>oracle</td><td>20</td></tr><tr><td>2026-02-02 09:50:37</td><td>10.18.20.196</td><td>oracle</td><td>20</td></tr><tr><td>2026-02-02 09:58:41</td><td>10.18.20.196</td><td>oracle</td><td>504</td></tr><tr><td>2026-02-02 09:58:42</td><td>10.18.20.196</td><td>oracle</td><td>505</td></tr><tr><td>2026-02-05 23:11:37</td><td>10.18.20.204</td><td>oracle</td><td>18</td></tr><tr><td>2026-02-05 23:11:37</td><td>10.18.20.204</td><td>oracle</td><td>18</td></tr><tr><td>2026-02-23 08:52:18</td><td>10.18.26.170</td><td>sysadm</td><td>11</td></tr><tr><td>2026-02-23 08:52:18</td><td>10.18.26.170</td><td>sysadm</td><td>11</td></tr></tbody></table>
+</details>
+</body></html>
