@@ -15,8 +15,14 @@ This project implements a complete ML pipeline for detecting SSH brute-force att
 
 ```bash
 # Requires Python 3.10+ with numpy, pandas, scikit-learn
+# Create virutal environment
+python3 -m venv .venv
+
 # Activate virtual environment if using one
 source .venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
 
 # Run the full pipeline
 python3 src/step1_parse_sshd.py
